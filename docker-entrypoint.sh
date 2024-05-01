@@ -3,7 +3,7 @@
 if [ ! -f /etc/ocserv/certs/server-key.pem ] || [ ! -f /etc/ocserv/certs/server-cert.pem ]; then
 	# Check environment variables
 	if [ -z "$CA_CN" ]; then
-		CA_CN="VPN CA"
+		CA_CN="CA"
 	fi
 
 	if [ -z "$CA_ORG" ]; then
@@ -15,11 +15,11 @@ if [ ! -f /etc/ocserv/certs/server-key.pem ] || [ ! -f /etc/ocserv/certs/server-
 	fi
 
 	if [ -z "$SRV_CN" ]; then
-		SRV_CN="www.example.com"
+		SRV_CN="demo.com"
 	fi
 
 	if [ -z "$SRV_ORG" ]; then
-		SRV_ORG="MyCompany"
+		SRV_ORG="Company"
 	fi
 
 	if [ -z "$SRV_DAYS" ]; then
