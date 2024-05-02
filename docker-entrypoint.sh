@@ -52,13 +52,6 @@ if [ ! -f /etc/ocserv/certs/server-key.pem ] || [ ! -f /etc/ocserv/certs/server-
 	EOSRV
 	certtool --generate-certificate --load-privkey server-key.pem --load-ca-certificate ca.pem --load-ca-privkey ca-key.pem --template server.tmpl --outfile server-cert.pem
 
-	# Create a test user
-	if [ -z "$NO_TEST_USER" ] && [ ! -f /etc/ocserv/ocpasswd ]; then
-		echo "Create test user 'test' with password 'test'"
-		echo 'test:PAC:ALL:$5$DktJBFKobxCFd7wN$sn.bVw8ytyAaNamO.CvgBvkzDiFR6DaHdUzcif52KK7' > /etc/ocserv/ocpasswd
-	fi
-fi
-
 # Open ipv4 ip forward
 sysctl -w net.ipv4.ip_forward=1
 
