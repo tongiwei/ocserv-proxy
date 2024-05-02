@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-ENV OC_VERSION=1.1.2
+ENV OC_VERSION=0.12.1
 
 RUN buildDeps=" \
 		curl \
