@@ -1,4 +1,4 @@
 default-select-group = PAC
 select-group = ALL
-auto-select-group = false
+auto-select-group = true
 config-per-group = /etc/ocserv/config-per-group
