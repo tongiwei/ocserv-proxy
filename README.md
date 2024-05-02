@@ -90,14 +90,14 @@ All the users opertaions happened while the container is running. If you used a 
 If say, you want to create a user named `tommy`, type the following command
 
 ```bash
-docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -g "Route,All" tommy
+docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -g "PAC,ALL" tommy
 Enter password:
 Re-enter password:
 ```
 
 When prompt for password, type the password twice, then you will have the user with the password you want.
 
->`-g "Route,ALL"` means add user `tommy` to group `Route` and group `All`
+>`-g "PAC,ALL"` means add user `tommy` to group `PAC` and group `ALL`
 
 #### Delete user
 
