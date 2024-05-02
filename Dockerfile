@@ -65,7 +65,7 @@ RUN set -x \
 
 WORKDIR /etc/ocserv
 
-COPY All /etc/ocserv/config-per-group/ALL_PROXY
+COPY All /etc/ocserv/config-per-group/ALL
 COPY cn-no-route.txt /etc/ocserv/config-per-group/PAC
 
 COPY docker-entrypoint.sh /entrypoint.sh
